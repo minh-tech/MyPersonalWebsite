@@ -71,7 +71,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   color: #252a32;
 }
 
@@ -125,7 +125,7 @@ button:focus {
 }
 
 .sec_pad {
-  padding: 95px 0px;
+  padding: 95px 0px 0px;
   overflow: hidden;
 }
 
@@ -143,8 +143,15 @@ button:focus {
   z-index: 1;
 }
 
+.logo_img {
+    width: 165px;
+    height: 180px;
+    display: block;
+    margin: auto;
+}
+
 .main_menu {
-  padding: 120px 50px 170px;
+  padding: 100px 50px;
 }
 
 .main_menu .menu {
@@ -209,6 +216,7 @@ button:focus {
 }
 
 .header_bottom {
+  /* padding: 120px 50px 170px; */
   text-align: center;
 }
 
@@ -676,7 +684,7 @@ button:focus {
 }
 
 .home_area .row {
-  height: 100vh;
+  height: 100%;
 }
 
 .home_area .personal_img {
@@ -684,15 +692,16 @@ button:focus {
 }
 
 .home_area .personal_img.img_two {
-  background: url("../image/welsh-corgi.jpg") no-repeat scroll;
+  background: url("../image/Avatar.png") no-repeat scroll;
   position: fixed;
   overflow: hidden;
-  top: 0;
-  width: 46%;
-  height: 100%;
+  width: 480px;
+  height: 640px;
   background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
+  background-position: center;
+  background-size: contain;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .personal_details {
@@ -1319,6 +1328,11 @@ button:focus {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 /*=========== portfolio_area css =============*/
+
+.portfolio_area {
+  background: url("../image/portfolio-bg.jpg") no-repeat scroll center 0/cover;
+}
+
 .gallery-filter {
   padding: 15px 0px 40px;
 }
@@ -1698,6 +1712,7 @@ button:focus {
 /*============= contact_area css ============*/
 .contact_area {
   overflow: hidden;
+  background: url("../image/contact_bg.jpg") no-repeat scroll center 0/cover;
 }
 
 .contact {
@@ -1787,7 +1802,7 @@ button:focus {
 }
 
 .contact_info p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   color: #70757f;
   margin: 0px;
@@ -1820,7 +1835,7 @@ button:focus {
 }
 
 .contact_title {
-  font: 700 16px/28px "Raleway", sans-serif;
+  font: 700 20px/28px "Raleway", sans-serif;
   color: #252a32;
   text-transform: uppercase;
   margin-bottom: 5px;
